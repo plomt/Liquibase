@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd " changeLogId="c78ccddc-9a51-4c0c-9bdb-5260d6ad969d">
+	
+	<!--ddl-->
+	<!--include file="changelogs/drop-changesets/changelog-droptable.xml"
+			 relativeToChangelogFile="true"/-->
+	<include file="changelogs/initial-changesets/initial-tables/changelog-createtable-v.1.xml"
+			 relativeToChangelogFile="true"/>
+	<include file="changelogs/updates/changelog-add_column-v.1.xml"
+	         relativeToChangelogFile="true"/>
+	<include file="changelogs/updates/changelog-add_column_toDrop-v.1.xml"
+	         relativeToChangelogFile="true"/>
+	<include file="changelogs/updates/changelog-rename_column_toDrop-v.1.xml"
+	         relativeToChangelogFile="true"/>
+	<include file="changelogs/drop-changesets/changelog-drop_column_toDrop-v.1.xml"
+	         relativeToChangelogFile="true"/>		 
+	<include file="changelogs/initial-changesets/initial-data/changelog-initdata-v.1.xml"
+	         relativeToChangelogFile="true"/>
+	<include file="changelogs/initial-changesets/initial-procedures/changelog-procedure-v.2.xml"
+			 relativeToChangelogFile="true"/>
+</databaseChangeLog>
